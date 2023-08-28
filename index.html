@@ -9,17 +9,6 @@
   <title>Admin Dashboard</title>
 </head>
 <body>
-  <header>
-    <div class="search-bar"></div>
-    <div>Notification Bell</div>
-    <div>Profile Name</div>
-    <div>Profile Icon</div>
-    <div>Welcome Text</div>
-    <button>New</button>
-    <button>Upload</button>
-    <button>Share</button>
-  </header>
-
   <sidebar>
     <div>Dashboard</div>
     <ul>
@@ -35,7 +24,52 @@
     </ul>
   </sidebar>
 
-  <main></main>
+  <header>
+    <div class="search-bar">Search Bar</div>
+    <section class="profile-settings">
+      <div>Notification Bell</div>
+      <div>Profile Name</div>
+    </section>
+    <section class="profile-welcome">
+      <div>Profile Icon</div>
+      <div>Welcome Text</div>
+    </section>
+    <section class="buttons">
+      <button>New</button>
+      <button>Upload</button>
+      <button>Share</button>
+    </section>
+  </header>
+
+  <main>
+    <section class="main-section" id="projects-section">
+      <div class="group-title">Projects</div>
+      <section class="article-group">
+        <div class="article">Article</div>
+        <div class="article">Article</div>
+        <div class="article">Article</div>
+        <div class="article">Article</div>
+        <div class="article">Article</div>
+        <div class="article">Article</div>
+      </section>
+    </section>
+    <section class="main-section" id="announcements-section">
+      <div class="group-title">Announcements</div>
+      <section class="article-group">
+        <div class="announcement">Article</div>
+        <div class="announcement">Article</div>
+        <div class="announcement">Article</div>
+      </section>
+    </section>
+    <section class="main-section" id="trending-section">
+      <div class="group-title">Trending</div>
+      <section class="article-group">
+        <div class="trending-profile">Profile</div>
+        <div class="trending-profile">Profile</div>
+        <div class="trending-profile">Profile</div>
+      </section>
+    </section>
+  </main>
 
 </body>
 </html>
