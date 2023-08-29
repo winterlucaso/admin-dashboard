@@ -10,7 +10,7 @@
 </head>
 <body>
   <sidebar>
-    <div>Dashboard</div>
+    <div id="dashboard-title">DASHBOARD</div>
     <ul>
       <img src="./icon/home-icon.svg" alt="home icon" class="dashboard-page-icon">
       <li class="dashboard-page-link">Home</li>
@@ -36,14 +36,16 @@
   <header>
     <section id="header-top">
       <input type="text" id="search_bar" placeholder="Search">
-      <img src="./icon/notification-icon.svg" alt="notification icon" id="notification-icon">
-      <img src="./icon/placeholder-account-icon.svg" alt="user profile icon" id="user-profile-icon">
-      <div>John Doe</div>
+      <section id="notifications-and-profile">
+        <img src="./icon/notification-icon.svg" alt="notification icon" id="notification-icon">
+        <img src="./icon/placeholder-account-icon.svg" alt="user profile icon" id="user-profile-icon">
+        <div>John Doe</div>
+      </section>
     </section>
     <section id="header-bottom">
       <img src="./icon/placeholder-account-icon.svg" alt="user profile icon" id="welcome-user-profile-icon">
-      <div>Hi there, John Doe</div>
-      <section class="action-buttons">
+      <div id="welcome-text">Hi there, John Doe</div>
+      <section class="container-action-buttons">
         <button>New</button>
         <button>Upload</button>
         <button>Share</button>

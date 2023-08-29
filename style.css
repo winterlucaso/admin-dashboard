@@ -36,34 +36,58 @@ sidebar ul {
     row-gap: 10px;
     justify-content: center;
     align-items: center;
+    padding-left: 0px;
+}
+
+#dashboard-title {
+    padding: 20px;
+}
+
+.dashboard-page-icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
 }
 
 /* Header */
 header {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60px 1fr;
 }
 
-header #header-top {
+#header-top {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 250px;
     justify-content: center;
     align-items: center;
 }
 
-header #header-bottom {
+#header-top #notifications-and-profile {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-columns: 40px 40px 80px;
+    justify-content: end;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#header-bottom {
+    display: grid;
+    grid-template-columns: 60px 1fr 300px;
     justify-content: center;
     align-items: center;
 }
 
-header .action-buttons {
+#welcome-text {
+    justify-content: start;
+}
+
+#header-bottom .container-action-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-header .action-buttons button {
+#header-bottom .container-action-buttons button {
+    width: 80px;
     padding: 5px;
     margin: 5px;
 }
