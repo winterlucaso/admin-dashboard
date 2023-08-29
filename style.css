@@ -1,3 +1,14 @@
+/* https://coolors.co/493548-4b4e6d-6a8d92-80b192-a1e887 */
+
+:root {
+    --color-1: #493548;
+    --color-2: #4B4E6D;
+    --color-3: #6A8D92;
+    --color-4: #80B192;
+    --color-dashboard: #A1E887;
+    --color-6: #e5e5e5;
+}
+
 /* Border test */
 * {
     border: 2px solid red;
@@ -11,6 +22,20 @@ body {
 /* Sidebar */
 sidebar {
     grid-row: 1 / 3;
+    /* display: grid; */
+    /* justify-content: center;
+    align-items: center; */
+    /* background-color: var(--color-dashboard); */
+}
+
+sidebar ul {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    list-style-type: none;
+    column-gap: 5px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Header */
@@ -21,12 +46,16 @@ header {
 
 header #header-top {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 header #header-bottom {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
+    justify-content: center;
+    align-items: center;
 }
 
 header .action-buttons {
@@ -37,6 +66,17 @@ header .action-buttons {
 header .action-buttons button {
     padding: 5px;
     margin: 5px;
+}
+
+#notification-icon,
+#user-profile-icon {
+    height: 35px;
+    width: 35px;
+}
+
+#welcome-user-profile-icon {
+    height: 50px;
+    width: 50px;
 }
 
 /* Main */
@@ -58,6 +98,8 @@ main #projects-section {
 
 .article {
     height: 150px;
+    padding: 5px;
+    margin: 5px;
 }
 
 #announcements-section {
