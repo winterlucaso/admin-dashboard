@@ -67,7 +67,7 @@ table {
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 200px 1fr;
 }
 
 /* Sidebar */
@@ -112,6 +112,7 @@ header {
 }
 
 #header-top #search_bar {
+    width: clamp(50%, 700px, 100%);
     margin-left: 5px;
     padding: 5px;
     border-radius: 10px;
@@ -209,7 +210,7 @@ article,
 
 #article-group {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 article {
